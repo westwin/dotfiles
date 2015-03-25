@@ -49,6 +49,8 @@ CYAN='\e[0;36m'
 export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOLOR\n\$"
 
 # If not running interactively, do not do anything
-#[[ $- != *i* ]] && return
-#[[ -z "$TMUX" ]] && exec tmux
+if command -v tmux &>/dev/null; then
+    [[ $- != *i* ]] && return
+    [[ -z "$TMUX" ]] && exec tmux
+fi
 
