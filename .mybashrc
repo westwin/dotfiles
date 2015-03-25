@@ -1,0 +1,53 @@
+set -o vi
+
+alias rm="rm -rf"
+alias cp="cp -rf"
+alias mv="mv -f"
+alias ls="ls --block-size=M -lh"
+alias ll="ls --block-size=M -lh"
+alias l="ls --block-size=M -lah"
+alias h="history"
+alias f="find . -name "
+alias d="cd $HOME/Downloads/"
+export PATH=$PATH:$HOME/bin
+alias pg="ps -ef|grep "
+
+alias i="sudo yum install -y"
+alias s="sudo yum search"
+
+alias ..="cd .."
+alias ...="cd ../../"
+alias _="cd -"
+#cd spell check and correct
+shopt -s cdspell
+
+#tab auto-completion ignore case
+bind "set completion-ignore-case on"
+
+alias u='sudo yum -y upgrade'
+
+if [ -f .bashrc.wk ]; then
+	. .bashrc.wk
+fi
+
+if [ -f .bashrc.java ]; then
+	. .bashrc.java
+fi
+
+if [ -f .bashrc.py ]; then
+	. .bashrc.py
+fi
+
+STARTBGCOLOR="\e[47m"
+NONECOLOR="\e[0m"
+#color table [Note: Replace 0 with 1 for dark color]
+GREEN='\e[0;32m';
+PURPLE='\e[0;35m'
+RED='\e[0;31m'
+CYAN='\e[0;36m'
+export PS1="$PURPLE$STARTBGCOLOR[\t]$GREEN[\u@\h \e[0;34m\w $RED\$?$GREEN]\$$NONECOLOR"
+
+# If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
+
