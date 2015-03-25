@@ -42,10 +42,11 @@ STARTBGCOLOR="\e[47m"
 NONECOLOR="\e[0m"
 #color table [Note: Replace 0 with 1 for dark color]
 GREEN='\e[0;32m';
+BLUE='\e[0;34m';
 PURPLE='\e[0;35m'
 RED='\e[0;31m'
 CYAN='\e[0;36m'
-export PS1="$PURPLE$STARTBGCOLOR[\t]$GREEN[\u@\h \e[0;34m\w $RED\$?$GREEN]\$$NONECOLOR"
+export PS1="$PURPLE$STARTBGCOLOR[\t]$BLUE[\u@\h \w $RED\$?$BLUE]\$$NONECOLOR"
 
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return
