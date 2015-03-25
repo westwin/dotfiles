@@ -46,7 +46,7 @@ BLUE='\e[0;34m';
 PURPLE='\e[0;35m'
 RED='\e[0;31m'
 CYAN='\e[0;36m'
-export PS1="\n$PURPLE$STARTBGCOLOR[\A]$BLUE[\u@\h \w $RED\$?$BLUE]$NONECOLOR\n\$"
+export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$?$BLUE]$NONECOLOR\n\$"
 
 # If not running interactively, do not do anything
 #[[ $- != *i* ]] && return
