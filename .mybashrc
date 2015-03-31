@@ -12,7 +12,7 @@ alias d="cd $HOME/Downloads/"
 export PATH=$PATH:$HOME/bin
 alias pg="ps -ef|grep "
 
-alias i="sudo yum install -y"
+alias i="sudo yum install "
 alias s="sudo yum search"
 
 alias ..="cd .."
