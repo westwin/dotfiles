@@ -26,16 +26,16 @@ bind "set completion-ignore-case on"
 
 alias u='sudo yum -y upgrade'
 
-if [ -f .bashrc.wk ]; then
-	. .bashrc.wk
+if [ -f $HOME/.bashrc.wk ]; then
+	. $HOME/.bashrc.wk
 fi
 
-if [ -f .bashrc.java ]; then
-	. .bashrc.java
+if [ -f $HOME/.bashrc.java ]; then
+	. $HOME/.bashrc.java
 fi
 
-if [ -f .bashrc.py ]; then
-	. .bashrc.py
+if [ -f $HOME/.bashrc.py ]; then
+	. $HOME/.bashrc.py
 fi
 
 STARTBGCOLOR="\e[47m"
