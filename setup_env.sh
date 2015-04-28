@@ -351,3 +351,4 @@ done
 [[ "${SETUP_PYTHON}" = "true" ]] && setup_py
 [[ "${SETUP_SSOADM}" = "true" ]] && setup_ssoadm
 #comment wayang
+#comments wayang 2
