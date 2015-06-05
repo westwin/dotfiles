@@ -1,0 +1,12 @@
+alias gd="git difftool"
+alias gst="git status"
+alias gco="git checkout"
+alias gbr="git branch"
+alias gup="git rebase"
+alias gci="git commit"
+alias gp="git pull -v "
+alias gps="git push -v"
+alias ga="git add -A"
+
+#remove untracked files and clear all un-staged changes
+alias gc="git clean -df; git checkout -- ."
