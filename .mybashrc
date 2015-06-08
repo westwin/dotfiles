@@ -1,35 +1,6 @@
-set -o vi
-
-alias rm="rm -rf"
-alias cp="cp -rf"
-alias mv="mv -f"
-alias ls="ls --block-size=M -lh"
-alias ll="ls --block-size=M -lh"
-alias l="ls --block-size=M -lah"
-alias h="history"
-alias f="find . -name "
-alias pg="ps -ef|grep "
-
-export PATH=$PATH:$HOME/bin
-
-#yum
-alias yi="sudo yum install "
-alias ys="sudo yum search"
-alias yu='sudo yum -y upgrade'
-
-#rsync
-alias s="rsync -avz -e ssh --progress"
-
-alias ..="cd .."
-alias ...="cd ../../"
-alias _="cd -"
-
-#cd spell check and correct
-shopt -s cdspell
-
-#tab auto-completion ignore case
-bind "set completion-ignore-case on"
-
+if [[ -f $HOME/.bashrc.common ]]; then
+	. $HOME/.bashrc.common
+fi
 
 if [[ -f $HOME/.bashrc.wk ]]; then
 	. $HOME/.bashrc.wk
@@ -47,6 +18,10 @@ if [[ -f $HOME/.bashrc.git ]]; then
 	. $HOME/.bashrc.git
 fi
 
+if [[ -f $HOME/.bashrc.tmux ]]; then
+	. $HOME/.bashrc.tmux
+fi
+
 STARTBGCOLOR="\e[47m"
 NONECOLOR="\e[0m"
 #color table [Note: Replace 0 with 1 for dark color]
@@ -57,9 +32,4 @@ RED='\e[0;31m'
 CYAN='\e[0;36m'
 export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOLOR\n\$"
 
-# If not running interactively, do not do anything
-#######if command -v tmux &>/dev/null; then
-#######    [[ $- != *i* ]] && return
-#######    [[ -z "$TMUX" ]] && exec tmux
-#######fi
 

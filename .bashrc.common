@@ -1,0 +1,43 @@
+set -o vi
+
+alias rm="rm -rf"
+alias cp="cp -rf"
+alias mv="mv -f"
+alias ls="ls --block-size=M -lh"
+alias ll="ls --block-size=M -lh"
+alias l="ls --block-size=M -lah"
+alias h="history"
+alias f="find . -name "
+alias pg="ps -ef|grep "
+
+export PATH=$PATH:$HOME/bin
+
+#yum
+alias yi="sudo yum install "
+alias ys="sudo yum search"
+alias yu='sudo yum -y upgrade'
+
+#rsync
+alias s="rsync -avz -e ssh --progress"
+
+alias ..="cd .."
+alias ...="cd ../../"
+alias _="cd -"
+
+#cd spell check and correct
+shopt -s cdspell
+
+#tab auto-completion ignore case
+bind "set completion-ignore-case on"
+
+alias wget='wget --no-check-certificate'
+alias vi="vim"
+
+#find . -name "" | xargs grep -i "" -n 
+# usage fx "*.java" "CollectionsUtil"
+function fx() {
+	echo "find . -name "${1}" 2>/dev/null | xargs grep -n -i "${2}" 2>/dev/null"
+	find . -name "${1}" 2>/dev/null | xargs grep -n -i "${2}"  2>/dev/null
+}
+
+#alias diffmerge='/cygdrive/c/Program\ Files/SourceGear/Common/DiffMerge/sgdm_cygwin.sh'
