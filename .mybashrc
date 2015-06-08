@@ -27,7 +27,7 @@ alias _="cd -"
 #cd spell check and correct
 shopt -s cdspell
 
-tab auto-completion ignore case
+#tab auto-completion ignore case
 bind "set completion-ignore-case on"
 
 
