@@ -1,0 +1,2 @@
+# ignore CR, as windows text file ends in CR-LF.
+set -o igncr
