@@ -55,4 +55,4 @@ CYAN='\e[0;36m'
 export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOLOR\n\$"
 
 #mkdir and cd to
-function mkc () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+function mkc () { mkdir -p "$@" && eval cd "\"$@\""; }
