@@ -53,3 +53,6 @@ CYAN='\e[0;36m'
 
 #[04:01:55 Wed Jun 10][fxi@fxi-vm-100 /usr/local/tomcat/default/webapps 2]
 export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOLOR\n\$"
+
+#mkdir and cd to
+function mkc () { mkdir -p "$@" && eval cd "\"\$$#\""; }
