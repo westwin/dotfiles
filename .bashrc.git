@@ -29,13 +29,17 @@ function gac() {
 }
 
 #create a pull request using stash cmd line
-#USAGE: grp <title> <description>
+#USAGE: grp <title> [description]
 function gpr(){
   local title="${1}"
   local desc="${2}"
+  if [[ -z "${desc}" ]]; then
+    desc="${title}"
+  fi
+
   if [[ -z "${title}" || -z "${desc}" ]]; then
     echo "create a git pull request with stash"
-    echo "USAGE: grp <title> <description>"
+    echo "USAGE: grp <title> [description]"
     return 1
   fi
   stash pull-request develop develop -T "${title}" -d "${desc}"
