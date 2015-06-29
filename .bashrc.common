@@ -11,7 +11,8 @@ alias f="find . -name "
 alias pg="ps -ef|grep "
 
 #highlighting the grep match result
-export GREP_OPTIONS='--color=auto' GREP_COLOR='01;31'
+#export GREP_OPTIONS='--color=auto' GREP_COLOR='01;31' #deprecated, use alias instead
+alias grep='grep --color=auto'
 
 export PATH=$PATH:$HOME/bin
 
