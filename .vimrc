@@ -4,17 +4,14 @@ set shiftwidth=2  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and  '>'
 
 filetype plugin on
-filetype plugin indent on
+"filetype plugin indent on
 "set omnifunc=syntaxcomplete#Complete
 
 set hidden
 syntax on
 set incsearch
 set hlsearch
-"set autowrite
-
-set autoindent
-set copyindent
+set autowrite
 
 "search ignore case
 set ignorecase
@@ -22,7 +19,7 @@ set ignorecase
 set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop
 set nowrap        " don't wrap lines
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set autoindent    " always set autoindenting on
+"set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
 set number        " always show line numbers
 set showmatch     " set show matching parenthesis
