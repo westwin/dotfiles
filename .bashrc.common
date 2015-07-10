@@ -1,4 +1,4 @@
-set -o vi
+#set -o vi # move to .inputrc
 
 alias rm="rm -rf"
 alias cp="cp -rf"
@@ -32,7 +32,7 @@ alias _="cd -"
 shopt -s cdspell
 
 #tab auto-completion ignore case
-bind "set completion-ignore-case on"
+#bind "set completion-ignore-case on" # move to .inputrc
 
 alias wget='wget --no-check-certificate'
 alias vi="vim"
