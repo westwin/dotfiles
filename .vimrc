@@ -42,3 +42,10 @@ highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Re
 highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
 highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
+
+"bash-support plugin
+let g:BASH_AuthorName   = 'Feng Xi'
+let g:BASH_AuthorRef    = 'fxi'
+let g:BASH_Email        = 'feng.xi@'
+let g:BASH_Company      = 'Feng Xi'
+"
