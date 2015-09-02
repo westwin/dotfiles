@@ -6,6 +6,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-if [ -f .mybashrc ]; then
-	. .mybashrc
+if [ -f $HOME/.mybashrc ]; then
+	. $HOME/.mybashrc
 fi
