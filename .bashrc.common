@@ -60,3 +60,8 @@ export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOL
 
 #mkdir and cd to
 function mkc () { mkdir -p "$@" && eval cd "\"$@\""; }
+
+# find then ls -l
+function fl () {
+  find . -name "*$1*" 2>/dev/null -exec ls -l {} \;
+}
