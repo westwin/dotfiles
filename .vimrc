@@ -29,6 +29,9 @@ set smarttab      " insert tabs on the start of a line according to shiftwidth, 
 set hlsearch      " highlight search terms
 set incsearch     " show search matches as you type
 
+" show a visual line under the cursor's current line 
+set cursorline
+
 set history=1000
 set undolevels=1000
 
