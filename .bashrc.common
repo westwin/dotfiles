@@ -7,7 +7,6 @@ alias ls="ls --block-size=M -lh"
 alias ll="ls --block-size=M -lh"
 alias l="ls --block-size=M -lah"
 alias h="history"
-alias f="find . -name "
 alias pg="ps -ef|grep "
 
 #highlighting the grep match result
@@ -60,6 +59,11 @@ export PS1="\n$PURPLE$STARTBGCOLOR[\T \d]$BLUE[\u@\h \w $RED\$? \!$BLUE]$NONECOL
 
 #mkdir and cd to
 function mkc () { mkdir -p "$@" && eval cd "\"$@\""; }
+
+# find helper
+function f() {
+  find . -name "*$1*" 2>/dev/null 
+}
 
 # find then ls -l
 function fl () {
