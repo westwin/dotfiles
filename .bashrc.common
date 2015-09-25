@@ -39,7 +39,7 @@ alias vi="vim"
 #find . -name "" | xargs grep -i "" -n 
 # usage fx "*.java" "CollectionsUtil"
 function fx() {
-	echo "find . -name "${1}" 2>/dev/null | xargs grep -n -i "${2}" 2>/dev/null"
+	echo "find . -name "*${1}*" 2>/dev/null | xargs grep -n -i "${2}" 2>/dev/null"
 	find . -name "${1}" 2>/dev/null | xargs grep -n -i "${2}"  2>/dev/null
 }
 
