@@ -26,7 +26,10 @@ alias s="rsync -avz -e ssh --progress"
 alias ..="cd .."
 alias ...="cd ../../"
 alias _="cd -"
-
+# cd to then ll
+function cl(){
+  cd "$1" && ll
+}
 #cd spell check and correct
 shopt -s cdspell
 
