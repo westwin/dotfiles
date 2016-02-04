@@ -73,3 +73,7 @@ function f() {
 function fl () {
   find . -name "*$1*" 2>/dev/null -exec ls -l {} \;
 }
+
+#upload ssh public key
+#USAGE: k root@192.168.22.235
+alias k="ssh-copy-id -i $HOME/.ssh/id_rsa.pub "
