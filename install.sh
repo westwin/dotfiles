@@ -2,7 +2,9 @@
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=$(dirname ${SCRIPT})
 
-/usr/bin/cp -fr ${SCRIPTPATH}/.bashrc* $HOME
-/usr/bin/cp -fr ${SCRIPTPATH}/.mybashrc $HOME
-/usr/bin/cp -fr ${SCRIPTPATH}/.vimrc $HOME
-/usr/bin/cp -fr ${SCRIPTPATH}/.inputrc $HOME
+cp -fr ${SCRIPTPATH}/.bashrc* $HOME
+cp -fr ${SCRIPTPATH}/.mybashrc $HOME
+cp -fr ${SCRIPTPATH}/.vimrc $HOME
+cp -fr ${SCRIPTPATH}/.inputrc $HOME
+
+source ${HOME}/.bashrc
