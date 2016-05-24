@@ -7,4 +7,4 @@ cp -fr ${SCRIPTPATH}/.mybashrc $HOME
 cp -fr ${SCRIPTPATH}/.vimrc $HOME
 cp -fr ${SCRIPTPATH}/.inputrc $HOME
 
-source ${HOME}/.bashrc
+#source ${HOME}/.bashrc
