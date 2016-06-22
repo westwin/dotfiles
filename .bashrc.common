@@ -37,7 +37,7 @@ shopt -s cdspell
 #bind "set completion-ignore-case on" # move to .inputrc
 
 alias wget='wget --no-check-certificate'
-alias vi="vim"
+command -v vim >/dev/null && alias vi="vim"
 
 #find . -name "" | xargs grep -i "" -n 
 # usage fx "*.java" "CollectionsUtil"
