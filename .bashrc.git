@@ -4,9 +4,10 @@ alias gco="git checkout"
 alias gbr="git branch"
 alias gup="git rebase"
 alias gci="git commit -m "
-alias gp="git pull -v "
-alias gps="git push -v"
-alias ga="git add -A"
+alias gp="git push -v"
+alias gaa="git add -A"
+alias gca="git commit -v -a"
+alias gcl='git clone --recursive'
 
 
 #remove untracked files and clear all un-staged changes
