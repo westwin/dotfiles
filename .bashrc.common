@@ -80,3 +80,6 @@ function fl () {
 #upload ssh public key
 #USAGE: k root@192.168.22.235
 alias k="ssh-copy-id -i $HOME/.ssh/id_rsa.pub "
+
+#json pretty print
+alias pp_json="python -mjson.tool"
