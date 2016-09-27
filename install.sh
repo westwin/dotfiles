@@ -2,9 +2,10 @@
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=$(dirname ${SCRIPT})
 
-cp -fr ${SCRIPTPATH}/.bashrc* $HOME
-cp -fr ${SCRIPTPATH}/.mybashrc $HOME
-cp -fr ${SCRIPTPATH}/.vimrc $HOME
-cp -fr ${SCRIPTPATH}/.inputrc $HOME
+local install_to="${1:-$HOME}"
+cp -fr ${SCRIPTPATH}/.bashrc* ${install_to}
+cp -fr ${SCRIPTPATH}/.mybashrc ${install_to}
+cp -fr ${SCRIPTPATH}/.vimrc ${install_to}
+cp -fr ${SCRIPTPATH}/.inputrc ${install_to}
 
 #source ${HOME}/.bashrc
