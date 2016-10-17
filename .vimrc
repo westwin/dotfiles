@@ -1,6 +1,6 @@
 set expandtab
-set tabstop=2
-set shiftwidth=2  " number of spaces to use for autoindenting
+set tabstop=4
+set shiftwidth=4  " number of spaces to use for autoindenting
 set shiftround    " use multiple of shiftwidth when indenting with '<' and  '>'
 
 filetype plugin on
