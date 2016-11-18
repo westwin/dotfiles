@@ -26,3 +26,8 @@ fi
 if [[ "$(uname)" =~ "CYGWIN" && -f $HOME/.bashrc.cygwin ]]; then
 	. $HOME/.bashrc.cygwin
 fi
+
+# source bash_completion
+if [[ -f /usr/share/bash-completion/bash_completion ]]; then
+    . /usr/share/bash-completion/bash_completion ]]; then
+fi
