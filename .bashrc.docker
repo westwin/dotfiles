@@ -1,0 +1,4 @@
+#pritty print env.
+#USAGE: de <container_name_id>
+alias de="docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}'"
+
