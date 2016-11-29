@@ -22,12 +22,18 @@ if [[ -f $HOME/.bashrc.tmux ]]; then
 	. $HOME/.bashrc.tmux
 fi
 
-# for cygwin
-if [[ "$(uname)" =~ "CYGWIN" && -f $HOME/.bashrc.cygwin ]]; then
-	. $HOME/.bashrc.cygwin
+# for docker
+if [[ -f $HOME/.bashrc.docker ]]; then
+	. $HOME/.bashrc.docker
 fi
 
 # source bash_completion
 if [[ -f /usr/share/bash-completion/bash_completion ]]; then
     . /usr/share/bash-completion/bash_completion
 fi
+
+# for cygwin
+if [[ "$(uname)" =~ "CYGWIN" && -f $HOME/.bashrc.cygwin ]]; then
+	. $HOME/.bashrc.cygwin
+fi
+
