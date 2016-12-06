@@ -9,6 +9,8 @@ alias gaa="git add -A"
 alias gca="git commit -v -a"
 alias gcl='git clone --recursive'
 alias glg='git log --stat --color'
+alias gf='git fetch'
+alias grb='git rebase'
 
 
 #remove untracked files and clear all un-staged changes
