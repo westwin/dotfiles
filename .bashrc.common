@@ -23,6 +23,13 @@ alias yu='sudo yum -y upgrade'
 #rsync
 alias s="rsync -avz -e ssh --progress"
 
+#ssh with root
+function r(){
+    local host="$1"
+    shift
+    ssh root@"${host}" "$@"
+}
+
 alias ..="cd .."
 alias ...="cd ../../"
 alias _="cd -"
