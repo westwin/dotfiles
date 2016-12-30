@@ -22,14 +22,19 @@ if [[ -f $HOME/.bashrc.tmux ]]; then
 	. $HOME/.bashrc.tmux
 fi
 
+# source bash_completion
+if [[ -f /usr/share/bash-completion/bash_completion ]]; then
+    . /usr/share/bash-completion/bash_completion
+fi
+
 # for docker
 if [[ -f $HOME/.bashrc.docker ]]; then
 	. $HOME/.bashrc.docker
 fi
 
-# source bash_completion
-if [[ -f /usr/share/bash-completion/bash_completion ]]; then
-    . /usr/share/bash-completion/bash_completion
+# for k8s
+if [[ -f $HOME/.bashrc.k8s ]]; then
+	. $HOME/.bashrc.k8s
 fi
 
 # for cygwin
