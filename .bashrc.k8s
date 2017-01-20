@@ -1,4 +1,4 @@
-type -v kubectl 
+command -v kubectl 
 if [[ $? -eq 0 ]]; then
     source <(kubectl completion bash)
 fi
