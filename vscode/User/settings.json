@@ -1,0 +1,33 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.fontFamily": "Inconsolata",
+    "editor.fontSize": 16,
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vs-seti",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.useSystemClipboard": true,
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": ["z", "z"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "eslint.options": { "configFile": "/home/xifeng/.eslintrc.json" },
+    "jshint.config": "/home/xifeng/.jshintrc"
+}
