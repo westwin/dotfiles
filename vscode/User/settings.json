@@ -6,11 +6,12 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.fontFamily": "Inconsolata",
     "editor.fontSize": 16,
+    "editor.formatOnSave": true,
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "vs-seti",
-    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.ignorecase": true,
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -29,5 +30,47 @@
         }
     ],
     "eslint.options": { "configFile": "/home/xifeng/.eslintrc.json" },
-    "jshint.config": "/home/xifeng/.jshintrc"
+    "jshint.config": "/home/xifeng/.jshintrc",
+    "explorer.confirmDelete": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "SA",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "hr_ent_user_org",
+            "connectTimeout": 15,
+            "encrypt": false,
+            "applicationName": "vscode-mssql"
+        },
+        {
+            "server": "192.168.30.186",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "SA",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "192.168.30.186"
+        }
+    ],
+    "[markdown]": {
+        "editor.tabSize": 2
+    },
+    "docker.showExplorer": false,
+    "[python]": {},
+    "window.menuBarVisibility": "default"
 }
