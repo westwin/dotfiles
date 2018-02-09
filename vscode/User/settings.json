@@ -1,12 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 5000,
+    "files.autoSaveDelay": 3000,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.fontFamily": "Inconsolata",
     "editor.fontSize": 16,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Monokai",
@@ -15,7 +15,10 @@
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
         {
-            "before": ["z", "z"],
+            "before": [
+                "z",
+                "z"
+            ],
             "after": [],
             "commands": [
                 {
@@ -29,7 +32,9 @@
             ]
         }
     ],
-    "eslint.options": { "configFile": "/home/xifeng/.eslintrc.json" },
+    "eslint.options": {
+        "configFile": "/home/xifeng/.eslintrc.json"
+    },
     "jshint.config": "/home/xifeng/.jshintrc",
     "explorer.confirmDelete": false,
     "gitlens.advanced.messages": {
@@ -72,5 +77,6 @@
     },
     "docker.showExplorer": false,
     "[python]": {},
-    "window.menuBarVisibility": "default"
+    "window.menuBarVisibility": "default",
+    "http.proxy": "socks5://127.0.0.1:1080"
 }

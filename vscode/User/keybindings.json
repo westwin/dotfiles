@@ -6,5 +6,17 @@
 	{ "key": "f3","command": "editor.action.goToDeclaration","when": "editorHasDefinitionProvider && editorTextFocus" },
 	{ "key": "alt+left", "command": "workbench.action.navigateBack" },
 	{ "key": "alt+right", "command": "workbench.action.navigateForward" },
-	{"key": "ctrl+k ctrl+k", "command": "editor.action.showHover"}
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "editor.action.showHover"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "go.import.add"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	}
 ]
