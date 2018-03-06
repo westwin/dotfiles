@@ -70,6 +70,16 @@
             "emptyPasswordInput": false,
             "savePassword": true,
             "profileName": "192.168.30.186"
+        },
+        {
+            "server": "hq-sql68.chamc.com.cn",
+            "database": "EntUserDb",
+            "authenticationType": "SqlLogin",
+            "user": "DevSupport",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "hr_prd_entuserdb"
         }
     ],
     "[markdown]": {
@@ -78,5 +88,7 @@
     "docker.showExplorer": false,
     "[python]": {},
     "window.menuBarVisibility": "default",
-    "http.proxy": "socks5://127.0.0.1:1080"
+    "http.proxy": "socks5://127.0.0.1:1080",
+    "workbench.startupEditor": "newUntitledFile",
+    "team.showWelcomeMessage": false
 }
