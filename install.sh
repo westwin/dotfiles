@@ -8,6 +8,8 @@ cp -fr ${SCRIPTPATH}/.mybashrc ${install_to}
 cp -fr ${SCRIPTPATH}/.vimrc ${install_to}
 cp -fr ${SCRIPTPATH}/.inputrc ${install_to}
 cp -fr ${SCRIPTPATH}/.tmux* ${install_to}
+cp -fr ${SCRIPTPATH}/.eslintrc.json ${install_to}
+cp -fr ${SCRIPTPATH}/.jshintrc ${install_to}
 
 #source ${HOME}/.bashrc
 

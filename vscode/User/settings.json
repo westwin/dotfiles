@@ -80,6 +80,16 @@
             "emptyPasswordInput": false,
             "savePassword": true,
             "profileName": "hr_prd_entuserdb"
+        },
+        {
+            "server": "192.168.30.230",
+            "database": "hrdb2",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "cicc"
         }
     ],
     "[markdown]": {
@@ -90,5 +100,6 @@
     "window.menuBarVisibility": "default",
     "http.proxy": "socks5://127.0.0.1:1080",
     "workbench.startupEditor": "newUntitledFile",
-    "team.showWelcomeMessage": false
+    "team.showWelcomeMessage": false,
+    "gitlens.keymap": "alternate"
 }
