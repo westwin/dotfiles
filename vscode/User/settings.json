@@ -10,7 +10,7 @@
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "vs-seti",
+    "workbench.iconTheme": "vscode-icons",
     "vim.ignorecase": true,
     "vim.useSystemClipboard": true,
     "vim.otherModesKeyBindingsNonRecursive": [
@@ -44,6 +44,8 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
@@ -101,5 +103,7 @@
     "http.proxy": "socks5://127.0.0.1:1080",
     "workbench.startupEditor": "newUntitledFile",
     "team.showWelcomeMessage": false,
-    "gitlens.keymap": "alternate"
+    "gitlens.keymap": "none",
+    "gitlens.historyExplorer.enabled": true,
+    "go.testFlags": ["-v"],
 }
