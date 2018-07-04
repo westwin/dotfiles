@@ -11,6 +11,11 @@ cp -fr ${SCRIPTPATH}/.tmux* ${install_to}
 cp -fr ${SCRIPTPATH}/.eslintrc.json ${install_to}
 cp -fr ${SCRIPTPATH}/.jshintrc ${install_to}
 
+#zsh specific
+if [[ "${SHELL}" == "/bin/zsh" ]]; then
+    cp -fr ${SCRIPTPATH}/.tmux.conf.zsh ${install_to}/.tmux.conf
+fi
+
 #source ${HOME}/.bashrc
 
 # install vscode setting
