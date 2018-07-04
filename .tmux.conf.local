@@ -285,5 +285,8 @@ bind-key C-p previous-window
 setw -g mode-keys vi
 
 #tmux resurrect
-run-shell ~/.tmux-resurrect/resurrect.tmux
-
+run-shell ~/.tmux/plugins/tmux-resurrect/resurrect.tmux
+#resurrect auto-save
+run-shell ~/.tmux/plugins/tmux-continuum/continuum.tmux
+#automatic restore
+set -g @continuum-restore 'on'
