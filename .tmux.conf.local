@@ -284,9 +284,22 @@ bind-key C-p previous-window
 #vim mode
 setw -g mode-keys vi
 
-#tmux resurrect
-run-shell ~/.tmux/plugins/tmux-resurrect/resurrect.tmux
-#resurrect auto-save
-run-shell ~/.tmux/plugins/tmux-continuum/continuum.tmux
-#automatic restore
+# List of plugins
+#set -g @plugin 'tmux-plugins/tpm'
+#set -g @plugin 'tmux-plugins/tmux-sensible'
+#set -g @plugin 'tmux-plugins/tmux-resurrect'
+#set -g @plugin 'tmux-plugins/tmux-continuum'
+#set -g @continuum-restore 'on'
+
+# above set -g @plugin syntax does not work
+# see the issue https://github.com/tmux-plugins/tpm/blob/master/docs/tpm_not_working.md
+set -g @tpm_plugins '          \
+    tmux-plugins/tpm             \
+    tmux-plugins/tmux-sensible   \
+    tmux-plugins/tmux-resurrect  \
+    tmux-plugins/tmux-continuum  \
+'
 set -g @continuum-restore 'on'
+
+# # # # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
