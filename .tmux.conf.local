@@ -299,6 +299,8 @@ set -g @tpm_plugins '          \
     tmux-plugins/tmux-resurrect  \
     tmux-plugins/tmux-continuum  \
 '
+
+set -g @resurrect-processes 'ssh psql mysql sqlite3 gvim vimx python mycli'
 set -g @continuum-restore 'on'
 
 # # # # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
