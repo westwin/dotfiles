@@ -100,7 +100,7 @@
     "docker.showExplorer": false,
     "[python]": {},
     "window.menuBarVisibility": "default",
-    "http.proxy": "socks5://127.0.0.1:1080",
+    "http.proxy": "http://127.0.0.1:8118",
     "workbench.startupEditor": "newUntitledFile",
     "team.showWelcomeMessage": false,
     "gitlens.keymap": "none",

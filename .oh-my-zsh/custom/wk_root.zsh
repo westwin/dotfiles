@@ -14,7 +14,7 @@ docs=$HOME/work/ROOT/docs
 
 export BUILD_NUMBER="fengxi-dev-build"
 
-labs=(cicc1 cicc2 demo dns build sagbuild xfd1 xfd2 xfgw xfd3 xfd4 xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
+labs=(cicc1 cicc2 demo dns build sagbuild registry xfd1 xfd2 xfgw xfd3 xfd4 xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
 ####################lab env################################
 function lab_alias(){
     local SVC_USER=nqsky
