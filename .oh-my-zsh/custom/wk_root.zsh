@@ -14,7 +14,7 @@ docs=$HOME/work/ROOT/docs
 
 export BUILD_NUMBER="fengxi-dev-build"
 
-labs=(cicc1 cicc2 demo dns build sagbuild registry xfd1 xfd2 xfgw xfd3 xfd4 xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
+labs=(jira wiki bitbucket demo dns build sagbuild registry xfgw xfd4 xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
 ####################lab env################################
 function lab_alias(){
     local SVC_USER=nqsky
@@ -81,7 +81,10 @@ function query(){
 }
 
 #fabric alias
-alias fabb="fab --show=debug --user=root --password='Nsky@0!6' --parallel --pool-size=8 -H "
+if [[ -f $HOME/.vm-pwd ]]; then
+    source $HOME/.vm-pwd
+fi
+alias fabb="fab --show=debug --user=root --password=${VM_PASSWORD} --parallel --pool-size=8 -H "
 
 #reg
 export QA1_REG=172.30.150.85
