@@ -105,5 +105,9 @@
     "team.showWelcomeMessage": false,
     "gitlens.keymap": "none",
     "gitlens.historyExplorer.enabled": true,
-    "go.testFlags": ["-v"],
+    "go.testFlags": [
+        "-v"
+    ],
+    "shellcheck.disableVersionCheck": true,
+    "dart.flutterSdkPath": "/home/xifeng/3rd/flutter",
 }

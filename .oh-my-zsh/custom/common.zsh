@@ -74,4 +74,7 @@ function cert() {
 }
 
 alias s="rsync -avzh -e ssh --progress"
-source /usr/bin/resty
+
+#intellij
+export PATH=$PATH:$HOME/3rd/idea-IC-182.4505.22/bin
+

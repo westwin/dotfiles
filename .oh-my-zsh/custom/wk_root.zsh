@@ -5,7 +5,7 @@ u=$HOME/work/ROOT/tae/user-center-console
 hu=$HOME/work/ROOT/tae/user-center-console-hr
 o=$HOME/work/ROOT/tae/opendj
 p=$HOME/work/ROOT/tae/paas
-dex=$HOME/work/ROOT/gopath/src/github.com/coreos/dex
+dex=$HOME/work/ROOT/gopath/src/github.com/dexidp/dex
 npns=$HOME/work/ROOT/tae/paas/NPNS
 paas=$HOME/work/ROOT/tae/paas
 sag=$HOME/work/ROOT/tae/sag
@@ -14,7 +14,7 @@ docs=$HOME/work/ROOT/docs
 
 export BUILD_NUMBER="fengxi-dev-build"
 
-labs=(jira wiki bitbucket demo dns build sagbuild registry xfgw xfd4 xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
+labs=(emm sag directory jira wiki bitbucket demo dns build sagbuild registry xfgw xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
 ####################lab env################################
 function lab_alias(){
     local SVC_USER=nqsky
