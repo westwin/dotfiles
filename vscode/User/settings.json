@@ -117,5 +117,8 @@
     ],
     "shellcheck.disableVersionCheck": true,
     "dart.flutterSdkPath": "/home/xifeng/3rd/flutter",
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "files.exclude": {
+        "**/node_modules": true
+    }
 }
