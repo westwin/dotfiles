@@ -71,6 +71,7 @@ autoload -Uz compinit && compinit -i
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+umask 027
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

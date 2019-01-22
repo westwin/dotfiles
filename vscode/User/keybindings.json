@@ -36,5 +36,13 @@
 	{
 		"key": "ctrl+w",
 		"command": "-workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+s ctrl+n",
+		"command": "code-runner.run"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "-code-runner.run"
 	}
 ]

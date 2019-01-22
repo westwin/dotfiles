@@ -13,25 +13,22 @@
     "workbench.iconTheme": "vscode-icons",
     "vim.ignorecase": true,
     "vim.useSystemClipboard": true,
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "z",
-                "z"
-            ],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.files.save",
-                    "args": []
-                },
-                {
-                    "command": "workbench.action.closeActiveEditor",
-                    "args": []
-                }
-            ]
-        }
-    ],
+    "vim.otherModesKeyBindingsNonRecursive": [{
+        "before": [
+            "z",
+            "z"
+        ],
+        "after": [],
+        "commands": [{
+                "command": "workbench.action.files.save",
+                "args": []
+            },
+            {
+                "command": "workbench.action.closeActiveEditor",
+                "args": []
+            }
+        ]
+    }],
     "eslint.options": {
         "configFile": "/home/xifeng/.eslintrc.json"
     },
@@ -49,8 +46,7 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "mssql.connections": [
-        {
+    "mssql.connections": [{
             "server": "localhost",
             "database": "",
             "authenticationType": "SqlLogin",
@@ -95,7 +91,7 @@
         }
     ],
     "[markdown]": {
-        "editor.tabSize": 2,
+        "editor.tabSize": 4,
         "editor.formatOnSave": true,
         "editor.wordWrap": "on",
         "editor.renderWhitespace": "all",
@@ -120,5 +116,16 @@
     "window.titleBarStyle": "custom",
     "files.exclude": {
         "**/node_modules": true
-    }
+    },
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+
+    "markdownlint.config": {
+        "default": true,
+        "MD007": {
+            "indent": 2
+        }
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true
 }

@@ -61,7 +61,7 @@ alias o='open_command'
 
 d=$HOME/Downloads
 
-export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/local/bin:/bin
 
 #zsh-autosuggestions
 bindkey '^ ' autosuggest-accept
