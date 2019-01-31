@@ -127,5 +127,10 @@
         }
     },
     "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true
+    "gitlens.views.lineHistory.enabled": true,
+    "java.home": "/usr/java/jdk1.8.0_152",
+    "logViewer.watch": [{
+        "title": "Platform",
+        "pattern": "/emm/logs/platform/platform.log"
+    }]
 }
