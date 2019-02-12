@@ -115,7 +115,11 @@
     "dart.flutterSdkPath": "/home/xifeng/3rd/flutter",
     "window.titleBarStyle": "custom",
     "files.exclude": {
-        "**/node_modules": true
+        "**/node_modules": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.saveFileBeforeRun": true,
