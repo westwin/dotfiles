@@ -136,5 +136,8 @@
     "logViewer.watch": [{
         "title": "Platform",
         "pattern": "/emm/logs/platform/platform.log"
-    }]
+    }
+],
+"terminal.integrated.rendererType": "dom",
+"workbench.activityBar.visible": true
 }
