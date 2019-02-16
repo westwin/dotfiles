@@ -139,5 +139,9 @@
     }
 ],
 "terminal.integrated.rendererType": "dom",
-"workbench.activityBar.visible": true
+"workbench.activityBar.visible": true,
+"vim.easymotion": true,
+"vim.hlsearch": true,
+"vim.sneakUseIgnorecaseAndSmartcase": true,
+"vim.leader": ","
 }
