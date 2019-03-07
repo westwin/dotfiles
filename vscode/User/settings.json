@@ -143,5 +143,6 @@
 "vim.easymotion": true,
 "vim.hlsearch": true,
 "vim.sneakUseIgnorecaseAndSmartcase": true,
-"vim.leader": ","
+"vim.leader": ",",
+"python.jediEnabled": false
 }
