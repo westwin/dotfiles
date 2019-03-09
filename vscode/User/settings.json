@@ -144,5 +144,11 @@
 "vim.hlsearch": true,
 "vim.sneakUseIgnorecaseAndSmartcase": true,
 "vim.leader": ",",
-"python.jediEnabled": false
+"python.jediEnabled": false,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"[gohtml]": {},
+"files.associations": {
+    "*.html": "html"
+}
 }
