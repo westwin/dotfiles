@@ -9,7 +9,7 @@
     "editor.formatOnSave": true,
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "One Monokai",
     "workbench.iconTheme": "vscode-icons",
     "vim.ignorecase": true,
     "vim.useSystemClipboard": true,
