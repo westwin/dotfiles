@@ -2,7 +2,7 @@ tae=$HOME/work/ROOT/tae/
 #wk=$HOME/work/ROOT/gopath/src/nationsky.com/gcs
 export BUILD_NUMBER="fengxi-dev-build"
 
-labs=(jenkins wechatpoc1 wechat-poc2 emm sag directory jira wiki bitbucket demo dns build sagbuild registry xfgw xfd5 xfd6 xfd7 xfd8 psr nfs1 xfvpn-s1 xfvpn-s2 xfvpn-c1 vpn-s1 vpn-c1 vpnbuild xf-dev-m1 xf-dev-n1)
+labs=(demo dns xfd1)
 ####################lab env################################
 function lab_alias(){
     local SVC_USER=nqsky
