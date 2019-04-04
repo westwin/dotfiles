@@ -1,6 +1,7 @@
 #!/bin/sh
-SCRIPT=$(readlink -f $0)
-SCRIPTPATH=$(dirname ${SCRIPT})
+#SCRIPT=$(readlink -f $0)
+#SCRIPTPATH=$(dirname ${SCRIPT})
+SCRIPTPATH=.
 
 install_to="${1:-$HOME}"
 cp -fr ${SCRIPTPATH}/.bashrc* ${install_to}

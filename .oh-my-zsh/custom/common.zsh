@@ -2,8 +2,8 @@
 setopt extendedglob
 export IBUS_ENABLE_SYNC_MODE=1
 
-alias vim="vimx"
-alias vi="vimx"
+#alias vim="vimx" #disable on macos
+#alias vi="vimx"
 
 alias cp="cp -fr"
 alias rm="rm -rf"

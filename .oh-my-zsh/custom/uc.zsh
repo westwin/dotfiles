@@ -1,1 +1,0 @@
-/home/xifeng/work/ROOT/tae/user-center/private/xifeng/uc.zsh

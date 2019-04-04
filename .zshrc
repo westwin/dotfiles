@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/xifeng/.oh-my-zsh
+  export ZSH=/Users/fengxi/.oh-my-zsh
   bindkey -v
   bindkey "^R" history-incremental-search-backward
 
