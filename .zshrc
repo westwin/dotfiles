@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/Users/fengxi/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
   bindkey -v
   bindkey "^R" history-incremental-search-backward
 
@@ -67,7 +67,7 @@ autoload -Uz compinit && compinit -i
 
 # User configuration
 
-  export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/xifeng/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:/home/xifeng/bin:/home/xifeng/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:/home/xifeng/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:/home/xifeng/bin"
+  export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:$HOME/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:$HOME/bin:$HOME/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:$HOME/bin:/usr/local/mvn/apache-maven-3.3.9/bin:/usr/local/ant/apache-ant-1.9.6/bin:/usr/local/java/jdk1.8.0_71/bin:/usr/local/eclipse/eclipse:/usr/local/gradle/default//bin:$HOME/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
