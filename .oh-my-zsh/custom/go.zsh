@@ -6,5 +6,5 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 export OS_OUTPUT_GOPATH=1
 
 # note, set GOCACHE=off for unit test
-export GOCACHE=on
+export GOCACHE=$GOPATH/.cache
 
