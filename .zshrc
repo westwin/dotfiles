@@ -59,7 +59,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-completions fabric oc git rsync tmux vi-mode history history-substring-search copyfile web-search systemd dnf jsontools go golang docker zsh-autosuggestions z zsh_reload zsh-syntax-highlighting node osx brew httpie)
+plugins=(zsh-completions fabric oc git rsync tmux vi-mode history history-substring-search copyfile web-search systemd dnf jsontools go golang docker zsh-autosuggestions z zsh_reload zsh-syntax-highlighting node osx brew httpie redis-cli)
 
 #fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
