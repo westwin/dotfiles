@@ -1,4 +1,1 @@
-source ~/.vimrc
-
-" eclipse like Ctrl+o to open method list
-map <C-o> :action FileStructurePopup<CR>
+nmap gg :action GotoImplementation<CR>
