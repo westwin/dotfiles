@@ -2,6 +2,7 @@ wk=$HOME/work/yufuid/code
 vds=~wk/yufu-vds/vds
 oidc=~wk/yufu-vds/oidc
 idaas=~wk/idaas-core
+gw=~wk/yufu-app-gw
 
 #dev
 portal="https://xifeng.i.yufuid.com/api/v1/tn-0a5a283e76074b23a532c99f6c3a81b9"
