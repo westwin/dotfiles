@@ -31,26 +31,5 @@ set incsearch     " show search matches as you type
 
 set nolist
 
-" show a visual line under the cursor's current line 
-set cursorline
-
 set history=1000
 set undolevels=1000
-
-set title
-
-"Jumping between buffers
-nnoremap gb :ls<CR>:b<Space>
-
-"a better color scheme for vimdiff
-highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
-highlight DiffDelete cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
-highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
-highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
-
-"bash-support plugin
-let g:BASH_AuthorName   = 'Feng Xi'
-let g:BASH_AuthorRef    = 'fxi'
-let g:BASH_Email        = 'feng.xi@'
-let g:BASH_Company      = 'Feng Xi'
-"
